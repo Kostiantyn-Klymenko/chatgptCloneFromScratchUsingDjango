@@ -1,0 +1,16 @@
+{% extends 'users/base.html' %}
+
+{% block title %}Home - ChatGPT Clone{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to My ChatGPT Clone</h1>
+    <div class="nav-btns" style="display: flex; flex-direction: column; gap: 18px; max-width: 300px; margin: 0 auto;">
+        <a href="{% url 'chat' %}">Chats</a>
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'logout' %}">Logout</a>
+        <a href="{% url 'profile' %}">Profile</a>
+    </div>
+</div>
+{% endblock %}
